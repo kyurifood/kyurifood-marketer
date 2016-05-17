@@ -2,11 +2,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/DefaultLayout"
-    android:gravity="center"
+    android:gravity="bottom"
+    android:background="@drawable/gradient_bg"
     tools:context=".activities.MainActivity">
 
-    <Button style="@style/DeepOrangeButton"
-        android:text="login"
-        android:id="@+id/btn_login"/>
+    <View style="@style/WhiteSpaceVertical" />
 
+    <ImageView style="@style/ComponentLayout"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:gravity="center"/>
+
+    <LinearLayout style="@style/LayoutFillParent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <EditText style="@style/EditText.Bordered"
+            android:hint="Username"/>
+
+        <View style="@style/WhiteSpaceVertical" />
+
+        <EditText style="@style/EditText.Bordered"
+            android:hint="Password"
+            android:inputType="textWebPassword"/>
+        <View style="@style/WhiteSpaceVertical" />
+        <Button style="@style/GreenButton"
+            android:layout_width="match_parent"
+            android:text="login"
+            android:layout_gravity="right"
+            android:id="@+id/btn_login"/>
+        <View style="@style/WhiteSpaceVertical" />
+        <View style="@style/LineHorizontal.White" />
+        <LinearLayout style="@style/ComponentLayout"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/component_padding">
+            <LinearLayout style="@style/ComponentLayout"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView style="@style/Text.Label.White"
+                    android:text="Craete an Account"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <View style="@style/LineVertical.White" />
+            <LinearLayout style="@style/ComponentLayout"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView style="@style/Text.Label.White"
+                    android:text="Forgot Password"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

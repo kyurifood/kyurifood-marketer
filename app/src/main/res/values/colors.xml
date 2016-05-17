@@ -4,8 +4,11 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="material_green_100">#C8E6C9</color>
+    <color name="material_green_400">#66BB6A</color>
     <color name="material_green_500">#4CAF50</color>
     <color name="material_green_700">#388E3C</color>
+    <color name="material_green_a400">#00E676</color>
 
     <color name="material_yellow_a200">#FFFF00</color>
     <color name="material_yellow_a400">#FFEA00</color>
@@ -22,6 +25,8 @@
     <color name="material_deep_orange_500">#FF5722</color>
     <color name="material_deep_orange_600">#F4511E</color>
 
+    <color name="material_amber_100">#FFECB3</color>
+    <color name="material_amber_400">#FFCA28</color>
     <color name="material_amber_500">#FFC107</color>
     <color name="material_amber_600">#FFB300</color>
 
@@ -46,6 +51,6 @@
 
     <color name="background">#E5E5E5</color>
 
-    <color name="white_transparent">#8FFF</color>
+    <color name="white_transparent">#33FFFFFF</color>
     <color name="black_transparent">#33212121</color>
 </resources>
