@@ -1,13 +1,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/DefaultLayout"
-    tools:context="com.artivisi.android.kyurifood.marketer.fragments.LaporanFragment">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView style="@style/Text.Headline.White"
-        android:padding="@dimen/layout_padding"
-        android:background="@color/material_amber_500"
-        android:gravity="center"
-        android:text="Laporan"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="133dp"
+            android:layout_height="131dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo" />
+
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nama Barang"
+                android:id="@+id/namabarang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Harga"
+                android:id="@+id/harga" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="detail"
+                android:id="@+id/detail"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
 
 </LinearLayout>
